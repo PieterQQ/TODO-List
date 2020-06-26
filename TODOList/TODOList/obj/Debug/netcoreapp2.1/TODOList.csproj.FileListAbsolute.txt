@@ -1,0 +1,6 @@
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\TODOList.csproj.CoreCompileInputs.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\TODOList.RazorAssemblyInfo.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\TODOList.RazorAssemblyInfo.cs
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\TODOList.AssemblyInfoInputs.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp2.1\TODOList.AssemblyInfo.cs
