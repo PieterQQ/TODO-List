@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\TODOList.Domain\TODOList.Domain.csproj" />
   </ItemGroup>
 
 </Project>

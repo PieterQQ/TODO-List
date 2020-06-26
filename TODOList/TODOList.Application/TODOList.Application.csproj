@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Mapping\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TODOList.Domain\TODOList.Domain.csproj" />
+    <ProjectReference Include="..\TODOList.Infrastructure\TODOList.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

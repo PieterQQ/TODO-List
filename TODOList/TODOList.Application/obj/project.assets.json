@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "TODOList.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/TODOList.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TODOList.Domain.dll": {}
+        }
+      },
+      "TODOList.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "TODOList.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TODOList.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TODOList.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -680,11 +703,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "TODOList.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TODOList.Domain/TODOList.Domain.csproj",
+      "msbuildProject": "../TODOList.Domain/TODOList.Domain.csproj"
+    },
+    "TODOList.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../TODOList.Infrastructure/TODOList.Infrastructure.csproj",
+      "msbuildProject": "../TODOList.Infrastructure/TODOList.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "TODOList.Domain >= 1.0.0",
+      "TODOList.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,7 +751,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj"
+            },
+            "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
