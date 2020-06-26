@@ -4,8 +4,9 @@ using System.Text;
 
 namespace TODOList.Domain.Model
 {
-    public class TodoItem : BaseEntity
+    public class BaseEntity
     {
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }
