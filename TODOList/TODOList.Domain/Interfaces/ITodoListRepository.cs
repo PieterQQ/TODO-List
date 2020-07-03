@@ -7,7 +7,7 @@ namespace TODOList.Domain.Interfaces
 {
     public interface ITodoListRepository
     {
-         List<TodoList> GetAll();
+       //  List<TodoList> GetAll();
 
     }
 }

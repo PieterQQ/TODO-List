@@ -1,0 +1,8 @@
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\bin\Debug\netcoreapp2.1\TODOList.Domain.deps.json
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\bin\Debug\netcoreapp2.1\TODOList.Domain.dll
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp2.1\TODOList.Domain.AssemblyInfoInputs.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp2.1\TODOList.Domain.AssemblyInfo.cs
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\bin\Debug\netcoreapp2.1\TODOList.Domain.pdb
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp2.1\TODOList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp2.1\TODOList.Domain.dll
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp2.1\TODOList.Domain.pdb

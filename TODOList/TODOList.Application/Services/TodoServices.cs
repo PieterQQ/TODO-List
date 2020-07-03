@@ -17,10 +17,10 @@ namespace TODOList.Application.Services
             _itemrepo = itemrepo;
             _listRepo = listRepo;
         }
-        public List<TodoListVm> GetListWithItems()
-        {
-            var lists = _listRepo.GetAll();
-            var items = _itemrepo.GetAll();
-        }
+        //public List<TodoListVm> GetListWithItems()
+        //{
+        //    var lists = _listRepo.GetAll();
+        //    var items = _itemrepo.GetAll();
+        //}
     }
 }

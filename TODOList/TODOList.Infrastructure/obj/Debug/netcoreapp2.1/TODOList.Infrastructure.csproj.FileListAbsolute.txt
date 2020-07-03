@@ -1,0 +1,5 @@
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Infrastructure\bin\Debug\netcoreapp2.1\TODOList.Domain.dll
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Infrastructure\obj\Debug\netcoreapp2.1\TODOList.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Infrastructure\obj\Debug\netcoreapp2.1\TODOList.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Infrastructure\obj\Debug\netcoreapp2.1\TODOList.Infrastructure.AssemblyInfo.cs
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Infrastructure\obj\Debug\netcoreapp2.1\TODOList.Infrastructure.csproj.CoreCompileInputs.cache

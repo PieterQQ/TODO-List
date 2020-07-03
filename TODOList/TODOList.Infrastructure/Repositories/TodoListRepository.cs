@@ -8,13 +8,13 @@ namespace TODOList.Infrastructure.Repositories
 {
     public class TodoListRepository : ITodoListRepository
     {
-        public List<TodoList> GetAll()
-        {
-        }
+        //public List<TodoList> GetAll()
+        //{
+        //}
         
-        public TodoList GetById(int id)
-        {
+        //public TodoList GetById(int id)
+        //{
 
-        }
+        //}
     }
 }
