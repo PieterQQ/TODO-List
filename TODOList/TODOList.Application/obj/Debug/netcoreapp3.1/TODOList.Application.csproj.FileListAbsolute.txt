@@ -8,7 +8,6 @@ C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\bin\Deb
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.csprojAssemblyReference.cache
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.AssemblyInfoInputs.cache
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.AssemblyInfo.cs
-C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.csproj.CoreCompileInputs.cache
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.csproj.CopyComplete
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.dll
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.pdb
