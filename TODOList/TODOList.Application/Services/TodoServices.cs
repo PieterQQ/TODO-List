@@ -3,11 +3,13 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TODOList.Application.Interfaces;
 using TODOList.Application.ViewModels;
 using TODOList.Domain.Interfaces;
+using TODOList.Domain.Model;
 using TODOList.Infrastructure.Repositories;
 
 namespace TODOList.Application.Services
@@ -66,27 +68,29 @@ namespace TODOList.Application.Services
 
         public async Task<TodoListVm> GetTodoListsById(int id)
         {
-            var list = await _listRepo.GetListById(id).ProjectTo<TodoListVm>(_mapper.ConfigurationProvider).SingleOrDefaultAsync();
-            return new TodoListListVm()
-            {
-                Lists = lists,
-                Count = lists.Count
-            };
+            var list = await _listRepo.GetAll().Where(p=>p.Id==id).ProjectTo<TodoListVm>(_mapper.ConfigurationProvider).SingleOrDefaultAsync();
+            return list;
         }
 
-        public Task<int> InsertTodoItem(TodoItemVm todoItem)
+        public async Task<int> InsertTodoItem(TodoItemVm todoItem)
         {
-            throw new NotImplementedException();
+            var item = _mapper.Map<TodoItem>(todoItem);
+            var id = await _itemrepo.InsertTodoItem(item);
+            return id;
         }
 
-        public Task<int> InsertTodoList(TodoListVm todoList)
+        public async Task<int> InsertTodoList(TodoListVm todoList)
         {
-            throw new NotImplementedException();
+            var list = _mapper.Map<TodoList>(todoList);
+            var id = await _listRepo.InsertTodoList(list);
+            return id;
         }
 
-        public Task UpdateTodoItem(TodoItemVm todoItem)
+        public async Task UpdateTodoItem(TodoItemVm todoItem)
         {
-            throw new NotImplementedException();
+            var item = _mapper.Map<TodoItem>(todoItem);
+             await _itemrepo.UpdateTodoItem(item);
+       
         }
     }
 }
