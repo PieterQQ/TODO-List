@@ -1,9 +1,13 @@
-﻿@{
+﻿@model TODOList.Application.ViewModels.TodoListListVm
+@{
 ViewData["Title"]="Index";
 }
 <h1>Todo</h1>
-<a href="#" class="btn btn-primary">Shopping</a> <a href="#" class="btn btn-primary">Tasks</a>
-<a href="#">Create New List</a>
+@foreach(var list in Model.Lists)
+{
+<a asp-action="ListDetails" asp-route-id="@list.Id" class="btn btn-primary">@list.ListName</a>
+}
+<a asp-action="CreateList">Create New List</a>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -15,18 +19,24 @@ ViewData["Title"]="Index";
         </tr>
     </thead>
     <tbody>
+        @foreach(var list in Model.Lists)
+        {
+        @foreach (var item in list.Items.Items)
+             {
         <tr>
-            <td><input type="checkbox" /></td>
-            <td>Task 1</td>
-            <td>Desc</td>
-            <td>2020-07-09</td>
-            <td>Tasks</td>
-            <td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+
+            <td><input asp-for="@item.IsCompleted" /></td>
+            <td>@item.Task</td>
+            <td>@item.Description</td>
+            <td>@(item.DueDate.HasValue? item.DueDate.Value.Date.ToShortTimeString():null)</td>
+            <td>@list.ListName</td>
+            <td><a asp-action="EditItem" asp-route-id="@item.Id">Edit</a> | <a asp-action="DeleteItem" asp-route-id="@item.Id">Delete</a></td>
 
         </tr>
+             }
+        }
+
     </tbody>
-
-
 
 
 </table>

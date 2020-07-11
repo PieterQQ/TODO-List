@@ -49,6 +49,16 @@ namespace TODOList.Application.Services
         public async Task<TodoListListVm> GetAllTodoLists()
         {
           var lists=await _listRepo.GetAll().ProjectTo<TodoListVm>(_mapper.ConfigurationProvider).ToListAsync();
+            foreach (var list in lists)
+            {
+                var items = await _itemrepo.GetTodoItemsForList(list.Id).ProjectTo<TodoItemVm>(_mapper.ConfigurationProvider).ToListAsync();
+                var todoItems = new TodoItemListVm()
+                {
+                    Items=items,
+                    Count=items.Count
+                };
+                list.Items = todoItems;
+            }
             return new TodoListListVm()
             {
               Lists=lists,
@@ -61,6 +71,7 @@ namespace TODOList.Application.Services
             var items = await _itemrepo.GetTodoItemsForList(listId).ProjectTo<TodoItemVm>(_mapper.ConfigurationProvider).ToListAsync();
             return new TodoItemListVm()
             {
+                ListId=listId,
                 Items = items,
                 Count = items.Count
             };

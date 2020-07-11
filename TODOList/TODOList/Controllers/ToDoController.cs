@@ -16,15 +16,17 @@ namespace TODOList.Controllers
             _services = services;
         }
         // GET: ToDoController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View();
+            var model = await _services.GetAllTodoLists();
+            return View(model);
         }
 
         // GET: ToDoController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> ListDetails(int id)
         {
-            return View();
+            var model = await _services.GetTodoItemsForList(id);
+            return View(model);
         }
 
         // GET: ToDoController/Create
