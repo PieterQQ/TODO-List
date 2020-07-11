@@ -11,3 +11,4 @@ C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Deb
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.csproj.CopyComplete
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.dll
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.pdb
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Application\obj\Debug\netcoreapp3.1\TODOList.Application.csproj.CoreCompileInputs.cache

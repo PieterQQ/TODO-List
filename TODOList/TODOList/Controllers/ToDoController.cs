@@ -4,11 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using TODOList.Application.Interfaces;
 
 namespace TODOList.Controllers
 {
     public class ToDoController : Controller
     {
+        private readonly ITodoServices _services;
+        public ToDoController(ITodoServices services)
+        {
+            _services = services;
+        }
         // GET: ToDoController
         public ActionResult Index()
         {

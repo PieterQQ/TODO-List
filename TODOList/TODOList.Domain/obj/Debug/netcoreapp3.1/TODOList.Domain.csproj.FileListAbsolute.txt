@@ -6,3 +6,4 @@ C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\ne
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp3.1\TODOList.Domain.AssemblyInfo.cs
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp3.1\TODOList.Domain.dll
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp3.1\TODOList.Domain.pdb
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList.Domain\obj\Debug\netcoreapp3.1\TODOList.Domain.csproj.CoreCompileInputs.cache
