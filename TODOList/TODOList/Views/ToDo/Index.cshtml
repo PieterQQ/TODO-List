@@ -19,23 +19,24 @@ ViewData["Title"]="Index";
         </tr>
     </thead>
     <tbody>
-        @foreach(var list in Model.Lists)
-        {
-        @foreach (var item in list.Items.Items)
-             {
         <tr>
+            @foreach (var list in Model.Lists)
+            {
+                @foreach (var item in list.Items.Items)
+                {
 
-            <td><input asp-for="@item.IsCompleted" /></td>
-            <td>@item.Task</td>
-            <td>@item.Description</td>
-            <td>@(item.DueDate.HasValue? item.DueDate.Value.Date.ToShortTimeString():null)</td>
-            <td>@list.ListName</td>
-            <td><a asp-action="EditItem" asp-route-id="@item.Id">Edit</a> | <a asp-action="DeleteItem" asp-route-id="@item.Id">Delete</a></td>
+
+                    <td><input asp-for="@item.IsCompleted" /></td>
+                    <td>@item.Task</td>
+                    <td>@item.Description</td>
+                    <td>@(item.DueDate.HasValue? item.DueDate.Value.Date.ToShortTimeString():null)</td>
+                    <td>@list.ListName</td>
+                    <td><a asp-action="EditItem" asp-route-id="@item.Id">Edit</a> | <a asp-action="DeleteItem" asp-route-id="@item.Id">Delete</a></td>
+
+                }
+            }
 
         </tr>
-             }
-        }
-
     </tbody>
 
 

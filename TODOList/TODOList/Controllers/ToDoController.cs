@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TODOList.Application.Interfaces;
+using TODOList.Application.ViewModels;
 
 namespace TODOList.Controllers
 {
@@ -30,7 +31,7 @@ namespace TODOList.Controllers
         }
 
         // GET: ToDoController/Create
-        public ActionResult Create()
+        public ActionResult CreateList()
         {
             return View();
         }
@@ -38,10 +39,11 @@ namespace TODOList.Controllers
         // POST: ToDoController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> CreateList(IFormCollection collection,TodoListVm model)
         {
             try
             {
+                await _services.InsertTodoList(model);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -72,24 +74,12 @@ namespace TODOList.Controllers
         }
 
         // GET: ToDoController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> DeleteItem(int id)
         {
+            await _services.DeleteTodoItem(id);
             return View();
         }
 
-        // POST: ToDoController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 }

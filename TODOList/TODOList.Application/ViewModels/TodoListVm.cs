@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using TODOList.Application.Mapping;
 using TODOList.Domain.Model;
@@ -11,6 +12,7 @@ namespace TODOList.Application.ViewModels
     public class TodoListVm:IMapFrom<TodoList>
     {
         public int Id { get; set; }
+        [DisplayName("Name")]
         public string ListName { get; set; }
         public TodoItemListVm Items { get; set; }
         public void Mapping(Profile profile)
