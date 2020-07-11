@@ -4,6 +4,124 @@
     "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList\\TODOList.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj",
+        "projectName": "TODOList.Application",
+        "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj",
+        "packagesPath": "C:\\Users\\Pieter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pieter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj": {
+                "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj"
+              },
+              "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -43,6 +161,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -150,6 +272,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -264,6 +390,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj": {
+                "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj"
+              },
               "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj"
               }
@@ -279,6 +408,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"

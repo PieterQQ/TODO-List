@@ -86,6 +86,3 @@ C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreap
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.pdb
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.genruntimeconfig.cache
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.csproj.CoreCompileInputs.cache
-C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.MvcApplicationPartsAssemblyInfo.cache

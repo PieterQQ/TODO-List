@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TODOList.Application;
 using TODOList.Infrastructure;
 
 namespace TODOList
@@ -37,6 +38,8 @@ namespace TODOList
             services.AddMvc(option => option.EnableEndpointRouting = false);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
+            services.AddApplication();
+            services.AddInfrastructure();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
