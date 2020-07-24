@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TODOList.Domain.Model
 {
@@ -11,7 +9,7 @@ namespace TODOList.Domain.Model
         public DateTime? DueDate { get; set; }
         public bool IsCompleted { get; set; }
         public int TodoListId { get; set; }
-        public TodoList TodoList { get; set; }
+        public string TodoListName { get; set; }
 
     }
 }

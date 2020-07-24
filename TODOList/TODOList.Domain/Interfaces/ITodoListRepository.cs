@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using TODOList.Domain.Model;
 
@@ -11,9 +8,8 @@ namespace TODOList.Domain.Interfaces
     {
         IQueryable<TodoList> GetAll();
         TodoList GetListById(int id);
-   
         Task<int> InsertTodoList(TodoList todoList);
-        Task DeleteTodoList(int todolistid);
+        Task DeleteTodoList(int todoListid);
         Task UpdateTodoList(TodoList todoList);
     }
 }
