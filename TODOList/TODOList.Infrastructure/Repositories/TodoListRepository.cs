@@ -1,8 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using TODOList.Domain.Interfaces;
 using TODOList.Domain.Model;
@@ -16,10 +12,10 @@ namespace TODOList.Infrastructure.Repositories
         {
             _context = context;
         }
-        public async Task DeleteTodoList(int todolistid)
+        public async Task DeleteTodoList(int todoListid)
         {
-            var ToDelete =  _context.TodoLists.Where(x => x.Id == todolistid).SingleOrDefault();
-            _context.TodoLists.Remove(ToDelete);
+            var list = _context.TodoLists.Where(p => p.Id == todoListid).SingleOrDefault();
+            _context.TodoLists.Remove(list);
             await _context.SaveChangesAsync();
         }
 
@@ -30,7 +26,7 @@ namespace TODOList.Infrastructure.Repositories
 
         public TodoList GetListById(int id)
         {
-            return _context.TodoLists.FirstOrDefault(x => x.Id == id);
+            return _context.TodoLists.FirstOrDefault(p => p.Id == id);
         }
 
         public async Task<int> InsertTodoList(TodoList todoList)

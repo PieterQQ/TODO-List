@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading.Tasks;
 using TODOList.Domain.Interfaces;
 using TODOList.Domain.Model;
@@ -20,8 +16,8 @@ namespace TODOList.Infrastructure.Repositories
 
         public async Task DeleteTodoItem(int todoItemid)
         {
-            var ToDelete = await _context.TodoItems.Where(x => x.Id == todoItemid).SingleOrDefaultAsync();
-            _context.TodoItems.Remove(ToDelete);
+            var item = await _context.TodoItems.Where(p => p.Id == todoItemid).SingleOrDefaultAsync();
+            _context.TodoItems.Remove(item);
             await _context.SaveChangesAsync();
         }
 
@@ -32,12 +28,12 @@ namespace TODOList.Infrastructure.Repositories
 
         public TodoItem GetItemById(int id)
         {
-            return _context.TodoItems.FirstOrDefault(x => x.Id == id);
+            return _context.TodoItems.FirstOrDefault(p => p.Id.Equals(id));
         }
 
         public IQueryable<TodoItem> GetTodoItemsForList(int todoListId)
         {
-            return _context.TodoItems.Where(x => x.TodoListId == todoListId);
+            return _context.TodoItems.Where(p => p.TodoListId.Equals(todoListId));
         }
 
         public async Task<int> InsertTodoItem(TodoItem todoItem)
