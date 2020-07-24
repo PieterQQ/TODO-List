@@ -1,8 +1,5 @@
 ﻿using AutoMapper;
 using System;
-using System.Collections.Generic;
-using System.Text;
-using TODOList.Application.Mapping;
 using TODOList.Domain.Model;
 using static TODOList.Application.Mapping.IMapFrom;
 
@@ -19,7 +16,8 @@ namespace TODOList.Application.ViewModels
         public string TodoListName { get; set; }
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<TodoItem, TodoItemVm>().ForMember(d=>d.TodoListName,opt=>opt.MapFrom(s=>s.TodoList.Name)).ReverseMap();
+            profile.CreateMap<TodoItem, TodoItemVm>()
+                .ForMember(d => d.TodoListName, opt => opt.MapFrom(s => s.TodoListName)).ReverseMap();
         }
     }
 }

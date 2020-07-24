@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using TODOList.Application.ViewModels;
 
 namespace TODOList.Application.Interfaces
 {
-    public interface ITodoServices
+    public interface ITodoService
     {
         Task<TodoListListVm> GetAllTodoLists();
-        Task<TodoListVm> GetTodoListsById(int id);
+        Task<TodoListVm> GetTodoListById(int id);
         Task<TodoItemListVm> GetTodoItemsForList(int listId);
-        Task<TodoItemListVm> GetAllTodoItems(int id);
+        Task<TodoItemListVm> GetAllTodoItems();
         Task<int> InsertTodoList(TodoListVm todoList);
-        Task DeleteTodoList(int todolistid);
-     
+        Task DeleteTodoList(int todoListId);
         Task<int> InsertTodoItem(TodoItemVm todoItem);
-        Task DeleteTodoItem(int todoItemid);
+        Task DeleteTodoItem(int todoItemId);
         Task UpdateTodoItem(TodoItemVm todoItem);
-    
-
+        Task UpdateTodoList(TodoListVm todoList);
     }
 }

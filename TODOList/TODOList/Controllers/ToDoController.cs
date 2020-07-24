@@ -57,14 +57,21 @@ namespace TODOList.Controllers
         {
             return View();
         }
+        // GET: Todo/Create
+        public ActionResult CreateItem()
+        {
+            return View();
+        }
 
-        // POST: ToDoController/Edit/5
+        // POST: Todo/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> CreateItem(IFormCollection collection, TodoItemVm model)
         {
             try
             {
+                await _services.InsertTodoItem(model);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -73,13 +80,41 @@ namespace TODOList.Controllers
             }
         }
 
+        // GET: Todo/Edit/5
+        public ActionResult EditItem(int id)
+        {
+            return View();
+        }
+
+        // POST: Todo/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, IFormCollection collection)
+        {
+            try
+            {
+                // TODO: Add update logic here
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+       
+
         // GET: ToDoController/Delete/5
         public async Task<ActionResult> DeleteItem(int id)
         {
             await _services.DeleteTodoItem(id);
-            return View();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<ActionResult> DeleteList(int id)
+        {
+            await _services.DeleteTodoList(id);
+            return RedirectToAction(nameof(Index));
         }
 
-        
     }
 }

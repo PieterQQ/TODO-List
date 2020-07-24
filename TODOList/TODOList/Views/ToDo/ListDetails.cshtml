@@ -30,6 +30,7 @@
     <tfoot>
         <tr>
             <td><a asp-action="CreateItem" asp-Ro-listId="@Model.ListId">Create new item</a></td>
+            <a asp-action="DeleteList" asp-Ro-listId="@Model.ListId">Delete list</a>
         </tr>
     </tfoot>
 
@@ -38,4 +39,5 @@
 </table>
 <div>
     <a asp-action="Index">Back to all lists</a>
+
 </div>

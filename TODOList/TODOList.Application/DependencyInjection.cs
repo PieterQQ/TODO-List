@@ -6,13 +6,15 @@ using TODOList.Application.Services;
 
 namespace TODOList.Application
 {
-    public static class DependencyInjection
-    {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
+   
+        public static class DependencyInjection
         {
-            services.AddTransient<ITodoServices, TodoServices>();
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            return services;
+            public static IServiceCollection AddApplication(this IServiceCollection services)
+            {
+                services.AddTransient<ITodoService, TodoService>();
+                services.AddAutoMapper(Assembly.GetExecutingAssembly());
+                return services;
+            }
         }
-    }
+    
 }

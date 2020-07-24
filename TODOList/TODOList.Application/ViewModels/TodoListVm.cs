@@ -17,7 +17,9 @@ namespace TODOList.Application.ViewModels
         public TodoItemListVm Items { get; set; }
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<TodoList, TodoListVm>().ForMember(d=>d.ListName,opt=>opt.MapFrom(s=>s.Name)).ForMember(d=>d.Items,opt=>opt.Ignore()).ReverseMap();
+            profile.CreateMap<TodoList, TodoListVm>()
+                .ForMember(d => d.ListName, opt => opt.MapFrom(s => s.Name))
+                .ForMember(d => d.Items, opt => opt.Ignore()).ReverseMap();
         }
     }
 }

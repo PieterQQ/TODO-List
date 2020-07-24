@@ -168,3 +168,4 @@ C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreap
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\TODOList.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\CreateList.cshtml.g.cs
+C:\Users\Pieter\Documents\GitHub\TODO-List\TODOList\TODOList\obj\Debug\netcoreapp3.1\Razor\Views\ToDo\CreateItem.cshtml.g.cs
