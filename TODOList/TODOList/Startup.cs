@@ -33,13 +33,15 @@ namespace TODOList
             services.AddDbContext<Context>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<IdentityUser>(o => o.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<Context>();
             services.AddMvc(option => option.EnableEndpointRouting = false);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
             services.AddApplication();
             services.AddInfrastructure();
+            services.AddControllersWithViews();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

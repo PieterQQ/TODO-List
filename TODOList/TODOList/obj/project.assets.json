@@ -8667,6 +8667,7 @@
       "Microsoft.Extensions.Primitives >= 3.1.5",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
       "TODOList.Application >= 1.0.0",
+      "TODOList.Domain >= 1.0.0",
       "TODOList.Infrastructure >= 1.0.0"
     ]
   },
@@ -8705,6 +8706,9 @@
           "projectReferences": {
             "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj": {
               "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Application\\TODOList.Application.csproj"
+            },
+            "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Domain\\TODOList.Domain.csproj"
             },
             "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Pieter\\Documents\\GitHub\\TODO-List\\TODOList\\TODOList.Infrastructure\\TODOList.Infrastructure.csproj"
